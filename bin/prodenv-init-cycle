@@ -1,6 +1,6 @@
 #!/usr/bin/env python3-snakemake
 
-repo_cfg_path = 'git@github.com:legend-exp/legend-dataflow-config.git'
+repo_cfg_path = 'git@github.com:erin717/legend-dataflow.git
 repo_cfg_branch = 'main'
 
 repo_par_overwrite_path = 'git@github.com:legend-exp/legend-dataflow-overrides.git'
@@ -45,7 +45,7 @@ def main():
             "setups": {
                 "l200": {
                     "paths": {
-                        "orig":           "/data1/shared/l60/l60-daq/daq-v01",
+                        "orig":           "/project/projectdirs/legend/users/aaron717/l200_test/r007_daq",
 
                         "dataflow":       "$_/dataflow",
 
@@ -76,8 +76,8 @@ def main():
                         "cache":          "$_/software/python/cache"
                         },
                     "execenv": {
-                        "cmd": "apptainer run",
-                        "arg": "/data1/shared/l60/l60-prodven-v1/containers/legendexp_legend-base_latest.sif"
+                        "cmd": "shifter",
+                        "arg": "--image=legendexp/legend-software:lates"
                         }
                     }
                 }
