@@ -45,7 +45,7 @@ def main():
             "setups": {
                 "l200": {
                     "paths": {
-                        "orig":           "/project/projectdirs/legend/users/aaron717/l200_test/r007_daq",
+                        "orig":           "/project/projectdirs/legend/users/aaron717/l200_test/daq",
 
                         "dataflow":       "$_/dataflow",
 
